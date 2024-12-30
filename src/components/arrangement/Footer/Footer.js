@@ -10,11 +10,16 @@ const Footer = () => {
     <div className={styles.Footer}>
       Footer
       <div>
-        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">Instagram</a>
+        <ul>
+          <li>
+            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">Instagram</a>
+          </li>
+          <li>
+            <a href={xUrl} target="_blank" rel="noopener noreferrer">X</a>
+          </li>
+        </ul>
       </div>
-      <div>
-        <a href={xUrl} target="_blank" rel="noopener noreferrer">X</a>
-      </div>
+      <small>Copyright © 2024 meltomir. All Rights Reserved.</small>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import Base from '../components/arrangement/Base';
 import Layout from '../components/arrangement/Layout';
 import ThreeDModel from '../components/features/ThreeDModel/ThreeDModel';
 import LinkList from '../components/features/LinkList/LinkList';
@@ -13,14 +12,16 @@ import style from '../style/Home.module.css';
 
 const Home = () => {
   return (
-    <Base>
       <Layout>
 
       <Element name="home" className={style.element}>
         <h1>
-          Meltomir
-          <Image src="/gunpaku.svg" width={80} height={80} alt="" />
+          <Image src="/gunpaku.svg" width={120} height={120} alt="" />
+          <small>meltomir's portfolio</small>
         </h1>
+      </Element>
+      
+      <Element name="ThreeDModel" className={style.element}>
         <ThreeDModel />
       </Element>
 
@@ -38,7 +39,6 @@ const Home = () => {
            
         
       </Layout>
-    </Base>
   )
 }
 
