@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[63],{6364:(e,_,r)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/profile",function(){return r(7802)}])},7802:(e,_,r)=>{"use strict";r.r(_),r.d(_,{default:()=>s});var n=r(4848);let s=()=>(0,n.jsx)("h1",{children:"Profile Page"})}},e=>{var _=_=>e(e.s=_);e.O(0,[636,593,792],()=>_(6364)),_N_E=e.O()}]);

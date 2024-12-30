@@ -1,3 +1,12 @@
 .Header {
-    background-color: #cca2ff;
+    background-color: #959595;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(5 * 1.2em); /* 20文字分の高さを確保 (1.2em は line-height の目安) */
+    margin: 16px 0; /* 上下に余白 */
+    padding: 16px; /* 内側の余白 */
+    border: 1px solid #ddd; /* 薄い境界線 */
+    border-radius: 8px; /* 角を少し丸める */
+
 }
