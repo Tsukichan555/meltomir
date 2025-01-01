@@ -6,11 +6,13 @@ import styles from './Header.module.css'
 const Header = () => {
   return (
     <div className={styles.Header}>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Gallery</li>
-      </ul>
+      <nav>
+        <ul> 
+          <li><ScrollLink to="linklist" smooth={true} duration={500} style={{ cursor: "pointer" }}>linklist</ScrollLink></li> 
+          <li><ScrollLink to="about" smooth={true} duration={500} style={{ cursor: "pointer" }}>About</ScrollLink></li> 
+          <li><ScrollLink to="gallery" smooth={true} duration={500} style={{ cursor: "pointer" }}>Gallery</ScrollLink></li> 
+        </ul>
+      </nav>
     </div>
   )
 }

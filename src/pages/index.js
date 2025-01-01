@@ -25,7 +25,7 @@ const Home = () => {
         <ThreeDModel />
       </Element>
 
-      <Element name="about" className={style.element}>
+      <Element name="linklist" className={style.element}>
         <LinkList />
       </Element>
 
