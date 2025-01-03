@@ -1,14 +1,14 @@
-.Header {
+/* .Header {
     background-color: #959595;
     display: flex;
     list-style: none;
     align-items: center;
     justify-content: center;
-    min-height: calc(5 * 1.2em); /* 20文字分の高さを確保 (1.2em は line-height の目安) */
-    margin: 16px 0; /* 上下に余白 */
-    padding: 16px; /* 内側の余白 */
-    border: 1px solid #ddd; /* 薄い境界線 */
-    border-radius: 8px; /* 角を少し丸める */
+    min-height: calc(5 * 1.2em); 
+    margin: 16px 0;
+    padding: 16px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
 
 }
 
@@ -20,5 +20,31 @@
 } 
     
 .Header li {
-    margin-right: 20px; /* それぞれの隙間 */
+    margin-right: 20px; 
+} */
+
+.Header {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(2 * 1.2em); 
+    margin: 16px 0;
+    padding: 16px; 
+    border-radius: 8px; 
+    color: var(--color-secondary);
+    font-weight: bold;
+}
+
+.Header ul {
+    display: flex;
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    gap:calc(10 * 1.2em);
+
+} 
+    
+.Header li {
+    margin-right: 20px; 
 }

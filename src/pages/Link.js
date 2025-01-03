@@ -1,12 +1,13 @@
-import React from 'react';
-import siteData from '../../../const';
+import React from 'react'
+import siteData from '../const';
+import Layout from '../components/arrangement/Layout';
+import styles from '../style/Link.module.css';
 
-const LinkList = () => {
+const Link = () => {
   const { shop: shop, writing: writing, social: social } = siteData.link;
   return (
-    <div>
-
-      <div>
+    <Layout>
+        <div>
         <h3>Shop My Creations:</h3>
         <div>
           <ul>
@@ -35,8 +36,8 @@ const LinkList = () => {
         </div>
       </div>
 
-    </div>
+    </Layout>
   )
 }
 
-export default LinkList
+export default Link
