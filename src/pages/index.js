@@ -1,34 +1,55 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import siteData from '../const';
 
-import Layout from '../components/arrangement/Layout';
+import Layout from '../components/arrangement/Layout/Layout';
 import styles from '../style/Home.module.css';
 
 
 const Home = () => {
   const aboutme = siteData.aboutme;
+  const text = "Hi. I am meltomir.";
+  const renderTextWithAnimation = (text) => {
+    return text.split('').map((char, index) => (
+      <span key={index} className={styles.char} style={{ '--char-index': index }}>
+        {char}
+      </span>
+    ));
+  };
   return (
-      <Layout>
+    <Layout classsName={styles.main}>
+      <h1 className={styles.pageLogo}>
 
-        <h1 className={styles.pageLogo}>Hi. I am meltomir.</h1>
-        
-        <div className={styles.imageContainer}>
-          <Image
-            className={styles.image}
-            src="/meltomirTopPagePic.png"
-            alt="meltomir"
-            width={200}
-            height={200}
-          ></Image>
-        </div>
+      {renderTextWithAnimation(text)}
+      </h1>
 
-        <div>
-          {aboutme}
-        </div>
-      </Layout>
+      <div className={styles.imageContainer}>
+        <Image
+          className={styles.image}
+          src="/meltomirTopPagePic.png"
+          alt="meltomir"
+          width={200}
+          height={200}
+        ></Image>
+      </div>
+
+
+      <div className={styles.aboutme}>
+        {aboutme}
+      </div>
+
+      <div>
+        <navigation>
+          <Link href="/Link">Links</Link>
+          <span>     </span>
+          <Link href="/Gallery">Gallery</Link>
+        </navigation>
+
+      </div>
+    </Layout>
   )
 }
 

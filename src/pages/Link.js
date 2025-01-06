@@ -1,6 +1,6 @@
 import React from 'react'
 import siteData from '../const';
-import Layout from '../components/arrangement/Layout';
+import Layout from '../components/arrangement/Layout/Layout';
 import styles from '../style/Link.module.css';
 
 const Link = () => {

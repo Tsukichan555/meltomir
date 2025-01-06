@@ -1,0 +1,14 @@
+.thumbnailAsHeader {
+    max-height: 25%;
+    width: 100vw;
+    object-fit: cover;
+
+}
+
+.explanation {
+    flex: 1;
+    /* flex-1 */
+    padding: 1rem;
+    /* p-4 (1rem = 16px) */
+}
+

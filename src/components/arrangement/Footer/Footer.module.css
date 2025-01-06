@@ -1,13 +1,13 @@
-/* .Footer {
-    background-color: #959595;
-    display: flex;
+
+.Footer {
+    background-color: var(--color-primary);
+    display: flex; 
     align-items: center;
     justify-content: center;
     min-height: calc(5 * 1.2em); 
     margin: 16px 0; 
+    margin-bottom: 0;
     padding: 16px; 
-    border: 1px solid #ddd;
-    border-radius: 8px; 
-
+    color: var(--color-secondary);
+    width: 100vw; /* フッターが横幅いっぱいに広がるように */
 }
- */
