@@ -15,9 +15,9 @@ mkdir meltomir
 cd meltomir
 ```
 
-#### このリポジトリをクローン
+#### このリポジトリ(hiichanブランチ)をクローン
 ```bash
-git clone https://github.com/Tsukichan555/meltomir.git
+git clone hiichan https://github.com/Tsukichan555/meltomir.git
 ```
 
 #### アプリのディレクトリに移動
