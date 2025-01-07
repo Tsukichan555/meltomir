@@ -1,20 +1,53 @@
-import Link from 'next/link'
+import React, { useState } from 'react';
 import { Link as ScrollLink, animateScroll as scroll, Element } from 'react-scroll'
-import { useRouter } from 'next/router'
 import styles from './Header.module.css'
+import { isAndroid, isIOS } from 'react-device-detect';
 
 const Header = () => {
-  return (
-    <div className={styles.Header}>
-      <nav>
-        <ul> 
-          <li><ScrollLink to="linklist" smooth={true} duration={500} style={{ cursor: "pointer" }}>linklist</ScrollLink></li> 
-          <li><ScrollLink to="about" smooth={true} duration={500} style={{ cursor: "pointer" }}>About</ScrollLink></li> 
+  if (isAndroid || isIOS) { 
+    const [isOpen, setIsOpen] = useState(true); 
+    const toggleMenu = () => {
+      setIsOpen(!isOpen); 
+    };
+
+    return (
+      <header className={styles.Header}>
+        <div className={styles.Burger} onClick={toggleMenu}> 
+          <div className={styles.BurgerLine}></div>
+          <div className={styles.BurgerLine}></div> 
+        </div> 
+        <nav className={`${styles.Nav} ${isOpen ? styles.Open : ''}`}> 
+          <ul> 
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li> 
+            <li><a href="#services">Services</a></li> 
+            <li><a href="#contact">Contact</a></li> 
+          </ul>
+        </nav>
+      
+        <ul>
+          <li><ScrollLink to="linklist" href="#linklist" smooth={true} duration={500} style={{ cursor: "pointer" }}>linklist</ScrollLink></li> 
+          <li><ScrollLink to="about" href="#about" smooth={true} duration={500} style={{ cursor: "pointer" }}>About</ScrollLink></li> 
           <li><ScrollLink to="gallery" smooth={true} duration={500} style={{ cursor: "pointer" }}>Gallery</ScrollLink></li> 
         </ul>
-      </nav>
-    </div>
-  )
+
+      </header>
+    )
+  } else { 
+    return (
+      <div className={styles.Header}>
+        <nav>
+          <ul>
+            <li><ScrollLink to="linklist" smooth={true} duration={500} style={{ cursor: "pointer" }}>linklist</ScrollLink></li> 
+            <li><ScrollLink to="about" smooth={true} duration={500} style={{ cursor: "pointer" }}>About</ScrollLink></li> 
+            <li><ScrollLink to="gallery" smooth={true} duration={500} style={{ cursor: "pointer" }}>Gallery</ScrollLink></li> 
+          </ul>
+        </nav>
+      </div>
+    )
+  }
+
+
 }
 
 export default Header
