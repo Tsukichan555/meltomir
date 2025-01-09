@@ -11,19 +11,11 @@ import styles from '../style/Home.module.css';
 
 const Home = () => {
   const aboutme = siteData.aboutme;
-  const text = "Hi. I am meltomir.";
-  const renderTextWithAnimation = (text) => {
-    return text.split('').map((char, index) => (
-      <span key={index} className={styles.char} style={{ '--char-index': index }}>
-        {char}
-      </span>
-    ));
-  };
+
   return (
     <Layout classsName={styles.main}>
       <h1 className={styles.pageLogo}>
-
-      {renderTextWithAnimation(text)}
+      Hi. I am meltomir.
       </h1>
 
       <div className={styles.imageContainer}>
