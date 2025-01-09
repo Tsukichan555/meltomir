@@ -24,6 +24,7 @@ const Header = () => {
           <div className={styles.Burger} onClick={toggleMenu}>
             <div className={styles.BurgerLine}></div>
             <div className={styles.BurgerLine}></div>
+            <div className={styles.BurgerLine}></div>
           </div>
           <nav className={`${styles.Nav} ${isOpen ? styles.Open : ''}`}>
             <ul>
@@ -36,7 +37,7 @@ const Header = () => {
         </>
       ) : (
         <nav>
-          <ul className={`${styles.Nav} ${styles.DesktopNav}`}>
+          <ul className={`${styles.DesktopNav}`}> 
             <li><ScrollLink to="linklist" smooth={true} duration={500} style={{ cursor: "pointer" }}>linklist</ScrollLink></li>
             <li><ScrollLink to="about" smooth={true} duration={500} style={{ cursor: "pointer" }}>About</ScrollLink></li>
             <li><ScrollLink to="gallery" smooth={true} duration={500} style={{ cursor: "pointer" }}>Gallery</ScrollLink></li>

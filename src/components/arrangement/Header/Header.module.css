@@ -1,85 +1,115 @@
 .Header {
     background-color: #959595;
     display: flex;
+    flex-direction: column;
     list-style: none;
     align-items: center;
     justify-content: center;
-    position: relative;
-    min-height: calc(5 * 1.2em); /* 20文字分の高さを確保 (1.2em は line-height の目安) */
-    margin: 16px 0; /* 上下に余白 */
-    padding: 16px; /* 内側の余白 */
-    border: 1px solid #ddd; /* 薄い境界線 */
-    border-radius: 8px; /* 角を少し丸める */
+    position: fixed;
+    height: 3em;
+    width: 100%;
+    top: 0px;
+
+
+    /* 20文字分の高さを確保 (1.2em は line-height の目安) */
+    margin: 0;
+    /* 上下に余白 */
+    padding: 0;
+    /* 内側の余白 */
+    border: 1px solid #ddd;
+    /* 薄い境界線 */
+    border-radius: 8px;
+    /* 角を少し丸める */
 }
 
 .Header ul {
     display: flex;
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
-    justify-content: center; /* 中央揃え */
-} 
-    
-.Header li {
-    margin-right: 20px; /* それぞれの隙間 */
+    justify-content: center;
+    /* 中央揃え */
 }
-  
+
+.Header li {
+    margin-right: 20px;
+    /* それぞれの隙間 */
+}
+
+
 .Burger {
-position: fixed; 
-top: 0px; /* ヘッダー内の上端に配置 */ 
-left: 0px;/* ヘッダー内の左端に配置 */
-cursor: pointer;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-height: 24px;
-background-color: rgb(179, 179, 180);/*直感的な採択、規格があればそれで*/
-border: 1px solid #ddd; /* 薄い境界線 */
+    height: 3em;
+    width: 3em;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    display: flex;
+    ;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(179, 179, 180);
+    /*直感的な採択、規格があればそれで*/
+    border: 1px solid #ddd;
+    /* 薄い境界線 */
+    margin: auto;
 }
 
 .BurgerLine {
-width: 30px;
-height: 3px;
-background-color: grey;
-margin: 4px 0;
+    width: 70%;
+    height: 0.5em;
+    background-color: grey;
+    margin: 4px 0;
 }
 
-.Nav {
-position: fixed; 
-/* top: 100%; /* ハンバーガーメニューの下に配置 なんとなくなので計算で入れるべき */
-left: 0;
-align-items: flex-start; /* 左上に配置する */ 
-justify-content:flex-start;
-display: none; /* 最初は非表示 */
-flex-direction: column;
-align-items: flex-start;
-background-color: gray;
+.Nav  {
+    left: 0;
+    margin: 1em;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    width: 50vw;
+    height: 50vh;
+    align-items: flex-start;
+    /* 左上に配置する */
+    justify-content: flex-start;
+    display: none;
+    /* 最初は非表示 */
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.6);
+
 }
+
 
 .Nav ul {
-list-style: none;
-padding: 0;
-margin: 0;
-flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
 }
 
 .Nav li {
-margin: 8px 0;
+    margin: 8px;
 }
 
 .Nav a {
-text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .Open {
-display: flex;
+    display: flex;
 }
 
 .DesktopNav {
-    display: flex; /* デスクトップでは表示 */
+    display: flex;
+    /* デスクトップでは表示 */
 }
 
 .MobileNav {
-    display: none; /* モバイルでは非表示 */
+    display: none;
+    /* モバイルでは非表示 */
 }
