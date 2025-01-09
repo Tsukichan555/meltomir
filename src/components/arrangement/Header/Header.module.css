@@ -47,11 +47,11 @@ margin: 4px 0;
 
 .Nav {
 position: fixed; 
-top: 30px; /* ハンバーガーメニューの下に配置 なんとなくなので計算で入れるべき */
+/* top: 100%; /* ハンバーガーメニューの下に配置 なんとなくなので計算で入れるべき */
 left: 0;
 align-items: flex-start; /* 左上に配置する */ 
 justify-content:flex-start;
-display: none;
+display: none; /* 最初は非表示 */
 flex-direction: column;
 align-items: flex-start;
 background-color: gray;
@@ -75,4 +75,11 @@ text-decoration: none;
 .Open {
 display: flex;
 }
-  
+
+.DesktopNav {
+    display: flex; /* デスクトップでは表示 */
+}
+
+.MobileNav {
+    display: none; /* モバイルでは非表示 */
+}
