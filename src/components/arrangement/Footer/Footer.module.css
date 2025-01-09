@@ -9,5 +9,5 @@
     margin-bottom: 0;
     padding: 16px; 
     color: var(--color-secondary);
-    width: 100vw; /* フッターが横幅いっぱいに広がるように */
+    width: inherit; /* フッターが横幅いっぱいに広がるように */
 }

@@ -15,6 +15,11 @@ export async function getStaticProps() {
 }
 
 const Gallery = ({ allPostsData }) => {
+  const linkThumbnail = {
+    width: 100,
+    height: 100,
+  } 
+
   return (
     <Layout>
     <h1>Gallery</h1>
@@ -26,7 +31,7 @@ const Gallery = ({ allPostsData }) => {
               <div className={styles.itemTitle}>{title}</div>
               <small className={styles.lightText}>{date}</small>
             </div>
-            <Image src={thumbnail} alt={title} width={100} height={100} className={styles.thumbnail} />
+            <Image src={thumbnail} alt={title} width={linkThumbnail.width} height={linkThumbnail.height} className={styles.thumbnail} />
           </Link>
         ))}
       </div>

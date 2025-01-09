@@ -1,40 +1,36 @@
 import React from 'react'
-import siteData from '../const';
+import { siteData } from '../const';
 import Layout from '../components/arrangement/Layout/Layout';
 import styles from '../style/Link.module.css';
+
+const SocialLink = ({ url, line }) => {
+  return (
+      <a href={url} className={styles.linkButton}>{line}</a>
+  )
+}
 
 const Link = () => {
   const { shop: shop, writing: writing, social: social } = siteData.link;
   return (
     <Layout>
-        <div>
+      <article className={styles.wrapper}>
         <h3>Shop My Creations:</h3>
-        <div>
-          <ul>
-            <li><a href={shop.base}>BASE</a></li>
-            <li><a href={shop.booth}>BOOTH</a></li>
-          </ul>
+        <div className={styles.linkWrapper}>
+            <SocialLink url={shop.base} line="BASE" />
+            <SocialLink url={shop.booth} line="BOOTH" />
         </div>
-      </div>
 
-      <div>
         <h3>My Writings:</h3>
-        <div>
-          <ul>
-            <li><a href={writing.note}>note</a></li>
-          </ul>
+        <div className={styles.linkWrapper}>
+            <SocialLink url={writing.note} line="note" />
         </div>
-      </div>
-      
-      <div>
+
         <h3>Find me on:</h3>
-        <div>
-          <ul>
-            <li><a href={social.instagram}>instagram</a></li>
-            <li><a href={social.x}>X</a></li>
-          </ul>
+        <div className={styles.linkWrapper}>
+            <SocialLink url={social.instagram} line="instagram" />
+            <SocialLink url={social.x} line="X" />
         </div>
-      </div>
+      </article>
 
     </Layout>
   )

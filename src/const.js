@@ -1,4 +1,4 @@
-const siteData = {
+export const siteData = {
 	title: "Hi. I am meltomir.",
     desc: "meltomirのポートフォリオサイトです。アート作品の販売は外部リンクをご参照ください。",
     url: "",
@@ -18,4 +18,3 @@ const siteData = {
         },
     },
 };
-export default siteData;
