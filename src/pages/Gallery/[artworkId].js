@@ -28,7 +28,7 @@ export default function Artwork({ postData }) {
         <title>{postData.title}</title>
       </Head>
       <div>
-        <Image className={styles.thumbnailAsHeader} src={postData.thumbnail} alt={postData.title} width={100} height={100} className={styles.thumbnail} />
+        <Image className={styles.thumbnailAsHeader} src={postData.thumbnail} alt={postData.title} width={100} height={100} />
       </div>
       <article className={styles.explanation}>
         <h1>{postData.title}</h1>
