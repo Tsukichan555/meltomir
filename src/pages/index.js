@@ -1,44 +1,52 @@
 import React from 'react';
-import Layout from '../components/arrangement/Layout';
-import ThreeDModel from '../components/features/ThreeDModel/ThreeDModel';
-import LinkList from '../components/features/LinkList/LinkList';
-import About from '../components/features/About/About';
-import Gallery from '../components/features/Gallery/Gallery.js';
-import { Element } from 'react-scroll';
 import Image from 'next/image';
-import style from '../style/Home.module.css';
-  
+import Link from 'next/link';
+
+import { siteData } from '../const';
+
+import Layout from '../components/arrangement/Layout/Layout';
+import styles from '../style/Home.module.css';
 
 
 const Home = () => {
+  const mainImage = {
+    src: "/meltomirTopPagePic.png",
+    alt: "meltomir",
+    width: 200,
+    height: 200
+  };
+
   return (
-      <Layout>
+    <Layout classsName={styles.main}>
+      <h1 className={styles.pageLogo}>
+        {siteData.title}
+      </h1>
 
-      <Element name="home" className={style.element}>
-        <h1>
-          <Image src="/gunpaku.svg" width={120} height={120} alt="" />
-          <small>meltomir's portfolio</small>
-        </h1>
-      </Element>
-      
-      <Element name="ThreeDModel" className={style.element}>
-        <ThreeDModel />
-      </Element>
+      <div className={styles.imageContainer}>
+        <Image
+          className={styles.image}
+          src={mainImage.src}
+          alt={mainImage.alt}
+          width={mainImage.width}
+          height={mainImage.height}
+        ></Image>
+      </div>
 
-      <Element name="linklist" className={style.element}>
-        <LinkList />
-      </Element>
 
-      <Element name="about" className={style.element}>
-        <About />
-      </Element>
+      <div className={styles.aboutme}>
+        {siteData.aboutme}
+      </div>
 
-      <Element name="gallery" className={style.element}>
-        <Gallery />
-      </Element>
-           
-        
-      </Layout>
+      <div>
+        臨時リンク:
+        <br />
+        <navigation>
+          <Link href="/Link">Links</Link>
+          <br />
+          <Link href="/Gallery">Gallery</Link>
+        </navigation>
+      </div>
+    </Layout>
   )
 }
 
