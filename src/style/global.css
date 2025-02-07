@@ -1,14 +1,11 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 
 :root {
-  --color-primary: #3e4458;
-  --color-secondary: #c9cff3;
-  --color-background: #62657D;
-  --color-text: #f5f5f5;
-  --color-accenct: #ff5f6d;
-  --color-darkest: #2a2b2e;
-  --color-lighter: #5b637d;
-  --color-darker: #444f72;
+  --color-primary: #cd485e;
+  --color-secondary: #be67a4;
+  --color-background: #f8e4e6;
+  --color-text: #000000;
+  --color-accent: #3e1cbb;
   --font-size-base: 16px;
   --line-height-base: 1.5;
 
@@ -42,7 +39,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #62657D;
+  background: var(--color-background);
   color: var(--color-text);
 }
 

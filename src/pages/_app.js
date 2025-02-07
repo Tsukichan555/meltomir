@@ -1,5 +1,4 @@
 import React from 'react';
-import App from 'next/app';
 import "../style/global.css";
 
 function MyApp({ Component, pageProps }) {
