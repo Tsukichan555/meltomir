@@ -1,3 +1,4 @@
+# MELTOMIR Portfolio
 ## Overview
 This is a portfolio site that showcases my friend's artwork.
 
@@ -16,6 +17,9 @@ The website is built using Next.js and Three.js.
 Check out the live site to see the artwork in action!
 
 
+# ## For Development Team
+
+This section is for the development team.
 
 ## Prerequisites
 Ensure you have Node.js version 22.12.0 or higher installed.
