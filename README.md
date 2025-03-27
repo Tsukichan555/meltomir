@@ -10,6 +10,12 @@ Team “世界征服” is under development.
 
 The website is built using Next.js and Three.js.
 
+## Live Demo
+[https://i-am-meltomir.vercel.app/](https://i-am-meltomir.vercel.app/)
+
+Check out the live site to see the artwork in action!
+
+
 
 ## Prerequisites
 Ensure you have Node.js version 22.12.0 or higher installed.
