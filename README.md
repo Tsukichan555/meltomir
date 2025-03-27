@@ -17,7 +17,7 @@ The website is built using Next.js and Three.js.
 Check out the live site to see the artwork in action!
 
 
-# ## For Development Team
+# For Development Team
 
 This section is for the development team.
 
