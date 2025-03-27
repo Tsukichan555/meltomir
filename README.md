@@ -1,8 +1,11 @@
 ## Overview
-__This is meltomir's portfolio site.__
+This is a portfolio site that showcases my friend's artwork.
+Her ig >>  [meltomir](https://www.instagram.com/meltomir/)
+Team “世界征服” is under development.
+The website is built using Next.js and Three.js.
+
 
 ## Prerequisites
-
 Ensure you have Node.js version 22.12.0 or higher installed.
 
 
